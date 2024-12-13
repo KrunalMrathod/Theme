@@ -3,11 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
   </head>
-  <body>
-    <h1 class="text-4Fxl text-red-500">theme</h1>
+  <style>
+    .nav-link.active::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 51%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      background-color: white;
+      border-radius: 2px;
+    }
+    .nav-link:hover::before,
+    .nav-link.active::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 51%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      background-color: white;
+      border-radius: 2px;
+    }
+  </style>
+  <body class="bg-gray-50 text-gray-800">
+    <section class="relative">
+      <img
+        src="./assets/Images/banner-bg-shape.png"
+        alt="Background Banner Shape"
+        class="w-full h-auto object-cover"
+      />
+
+      <header class="absolute top-0 left-0 right-0 bg-transparent">
+        <nav
+          class="container mx-auto px-[100px] py-[20px] pt- flex align-middle items-center justify-between"
+        >
+          <div class="w-[116px] h-[52px]">
+            <a href="index.html" aria-label="Home">
+              <img
+                src="./assets/Images/logo-01.svg"
+                alt="Company Logo"
+                class="h-full w-auto"
+              />
+            </a>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="flex flex-col gap-y-2.5 pr-28">
+            <ul class="hidden md:flex space-x-14 text-sm font-medium">
+              <li class="relative group">
+                <a
+                  href="#home"
+                  class="nav-link relative active text-xl text-white"
+                  >Home</a
+                >
+                <ul
+                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a
+                      href="#sub-home-1"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Sub Home 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sub-home-2"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Sub Home 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a href="#services" class="nav-link relative text-xl text-white"
+                  >Services</a
+                >
+                <ul
+                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a
+                      href="#service-1"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Service 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#service-2"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Service 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a href="#pages" class="nav-link relative text-xl text-white"
+                  >Pages</a
+                >
+                <ul
+                  class="absolute left-0 w-32 mt-6 mt-2 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a href="#page-1" class="block px-4 py-2 hover:bg-gray-100"
+                      >Page 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#page-2" class="block px-4 py-2 hover:bg-gray-100"
+                      >Page 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a href="#projects" class="nav-link relative text-xl text-white"
+                  >Projects</a
+                >
+                <ul
+                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a
+                      href="#project-1"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Project 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#project-2"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Project 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a href="#blogs" class="nav-link relative text-xl text-white"
+                  >Blogs</a
+                >
+                <ul
+                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a href="#blog-1" class="block px-4 py-2 hover:bg-gray-100"
+                      >Blog 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#blog-2" class="block px-4 py-2 hover:bg-gray-100"
+                      >Blog 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a href="#contact" class="nav-link relative text-xl text-white"
+                  >Contact</a
+                >
+                <ul
+                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
+                >
+                  <li>
+                    <a
+                      href="#contact-1"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Contact 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#contact-2"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Contact 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="h-0.5 bg-slate-400"></div>
+          </div>
+          <div class="flex gap-5 align-middle">
+            <div class="hidden md:flex flex-col items-center">
+              <span class="text-sm font-medium underline text-slate-400 text-lg"
+                >Phone Number</span
+              >
+              <span class="text-lg font-semibold text-slate-50 text-lg"
+                >+1-800-555-0123</span
+              >
+            </div>
+
+            <button
+              class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              <i class="fa-solid fa-magnifying-glass text-slate-50 text-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c2fedc24d5.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="./js/script.js"></script>
 </html>
