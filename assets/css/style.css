@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 51%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 2px;
+}
+.nav-link:hover::before,
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 2px;
+}
