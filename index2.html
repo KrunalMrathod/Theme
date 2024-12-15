@@ -1,279 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <section style="min-height: 110vh" class="relative bg-[#620fe1] lg:bg-none  ">
-      <img
-        src="./assets/Images/banner-bg-shape.png"
-        alt="Background Banner Shape"
-        class="w-full min-h-screen md:h-auto object-cover hidden lg:block"
-      />
 
-      <header class="absolute top-0 left-0 right-0 bg-transparent">
-        <nav
-          class="max-w-[80%] max-h-[10%] p-4 container mx-auto flex justify-between items-center lg:max-w-[100%] xl:max-w-[80%]"
-        >
-          <!-- Logo -->
-          <div class="w-[10%] h-[50%]">
-            <a href="index.html" aria-label="Home">
-              <img
-                src="./assets/Images/logo-01.svg"
-                alt="Company Logo"
-                class="h-full w-auto"
-              />
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <section class="relative bg-[#620fe1] md:bg-[#620fe1] lg:bg-transparent ">
+    <img src="./assets/Images/banner-bg-shape.png" alt="Background Banner Shape"
+      class="w-full min-h-screen md:h-auto object-cover hidden lg:block xl:block" />
+
+    <header class="absolute top-0 left-0 right-0 bg-transparent">
+      <nav
+        class=" max-w-[80%] max-h-[10%] p-4 container mx-auto flex justify-between items-center lg:max-w-[100%] xl:max-w-[80%]">
+        <!-- Logo -->
+        <div class="w-[10%] h-[50%] ">
+          <a href="index.html" aria-label="Home">
+            <img src="./assets/Images/logo-01.svg" alt="Company Logo" class="h-full w-full" />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-col gap-2 xl:mr-24">
+          <ul class="flex gap-10 justify-center w-full hidden lg:flex">
+            <li class="relative group">
+              <a href="#home" class="nav-link relative active text-white text-2xl sm:text-lg">Home</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Home 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Home 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a href="#home" class="nav-link relative text-xl text-white text-2xl">Service</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Service 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Service 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a href="#home" class="nav-link relative text-xl text-white text-2xl">Pages</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Pages 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Pages 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a href="#home" class="nav-link relative text-xl text-white text-2xl">Projects</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Projects 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Projects 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a href="#home" class="nav-link relative text-xl text-white text-2xl">Blog</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Blog 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Blog 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a href="#home" class="nav-link relative text-xl text-white text-2xl">Contact</a>
+              <ul class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2">
+                <li class="relative group">
+                  <a href="#service-1" class="block px-4 py-2 hover:bg-gray-100">Contact 1</a>
+                </li>
+                <li class="relative group">
+                  <a href="#service-2" class="block px-4 py-2 hover:bg-gray-100">Contact 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="h-0.5 bg-slate-400 hidden lg:flex"></div>
+        </div>
+
+        <button class="block lg:hidden" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+        <div class="flex gap-5">
+          <div class="hidden lg:flex flex-col items-center">
+            <span class="text-sm w-full font-medium underline text-slate-400">Phone Number</span>
+            <span class="text-lg font-semibold text-slate-50">+1-800-555-0123</span>
           </div>
-
-          <!-- Navigation Links -->
-          <div class="flex flex-col gap-2 xl:mr-24">
-            <ul class="flex gap-10 justify-center w-full hidden lg:flex">
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative active text-white text-2xl sm:text-lg"
-                  >Home</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Home 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Home 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative text-xl text-white text-2xl"
-                  >Service</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Service 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Service 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative text-xl text-white text-2xl"
-                  >Pages</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Pages 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Pages 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative text-xl text-white text-2xl"
-                  >Projects</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Projects 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Projects 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative text-xl text-white text-2xl"
-                  >Blog</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Blog 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Blog 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="relative group">
-                <a
-                  href="#home"
-                  class="nav-link relative text-xl text-white text-2xl"
-                  >Contact</a
-                >
-                <ul
-                  class="absolute left-0 mt-2 w-32 mt-6 hidden group-hover:block bg-white shadow-md py-2"
-                >
-                  <li class="relative group">
-                    <a
-                      href="#service-1"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Contact 1</a
-                    >
-                  </li>
-                  <li class="relative group">
-                    <a
-                      href="#service-2"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Contact 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="h-0.5 bg-slate-400 hidden lg:flex"></div>
+          <div class="hidden lg:flex gap-5 align-middle">
+            <button class="flex align-middle items-center gap-5">
+              <i class="fa-solid fa-magnifying-glass text-slate-50 text-xl"></i>
+              <img src="./assets/Images/menu.svg" alt="" />
+            </button>
           </div>
+        </div>
+      </nav>
+    </header>
 
-          <button class="block md:hidden" aria-label="Toggle Menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-          <div class="flex gap-5">
-            <div class="hidden lg:flex flex-col items-center">
-              <span class="text-sm w-full font-medium underline text-slate-400"
-                >Phone Number</span
-              >
-              <span class="text-lg font-semibold text-slate-50"
-                >+1-800-555-0123</span
-              >
-            </div>
-            <div class="hidden lg:flex gap-5 align-middle">
-              <button class="flex align-middle items-center gap-5">
-                <i
-                  class="fa-solid fa-magnifying-glass text-slate-50 text-xl"
-                ></i>
-                <img src="./assets/Images/menu.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <section
-      class="relative md:absolute top-0 xs:top-8 sm:top-10 w-full h-auto xl:pt-56 lg:pt-52 md:h-screen flex items-center px-4 md:px-20 flex-col-reverse md:flex-row"
-    >
+    <section
+      class="relative md:absolute top-0  w-full h-auto xl:pt-56  md:h-screen flex items-center px-4 md:px-20 flex-col-reverse md:flex-row">
       <!-- Text Section -->
-      <div
-        class="z-50 w-full md:w-3/5 flex flex-col gap-5 text-center md:text-left"
-      >
-        <h1
-          class="text-4xl md:text-7xl lg:text-9xl text-white font-bold leading-tight"
-        >
+      <div class="z-50 w-full md:w-3/5 flex flex-col gap-5 text-center md:text-left">
+        <h1 class="text-4xl md:text-7xl lg:text-9xl text-white font-bold leading-tight">
           SEO Analysis
         </h1>
-        <p
-          class="text-lg md:text-2xl lg:text-3xl text-white font-semibold leading-relaxed"
-        >
+        <p class="text-lg md:text-2xl lg:text-3xl text-white font-semibold leading-relaxed">
           Providing the best SEO service solution for your website and growing
           your business.
         </p>
 
         <div class="mt-5 w-full md:w-4/6">
-          <input
-            type="email"
-            placeholder="Enter your email address..."
-            class="w-full p-4 text-gray-900 rounded-lg focus:outline-none"
-          />
+          <input type="email" placeholder="Enter your email address..."
+            class="w-full p-4 text-gray-900 rounded-lg focus:outline-none" />
         </div>
 
-        <span class="text-white"
-          >Practical tools make it easier to manage your site.</span
-        >
+        <span class="text-white">Practical tools make it easier to manage your site.</span>
       </div>
 
       <!-- Image Section -->
-      <div
-        class="relative md:absolute md:inset-x-2/4 w-full md:w-3/6 flex justify-center md:justify-end mt-5 md:mt-0"
-      >
-        <img
-          src="./assets/Images/banner-hero-01.png"
-          class="w-full h-auto object-cover"
-          alt="Hero Banner"
-        />
+      <div class="relative md:absolute md:inset-x-2/4 w-full md:w-3/6 flex justify-center md:justify-end mt-5 md:mt-0">
+        <img src="./assets/Images/banner-hero-01.png" class="w-full h-auto object-cover sm:mt-10" alt="Hero Banner" />
       </div>
     </section>
   </section>
+  </section>
 
-    </section>
-    <script src="./js/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/c2fedc24d5.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- partner -->
+  <section class="mt-10">
+    <div>
+      <h5 class="text-center text-lg font-bold">
+        Over
+        <span class="text-gradient1">
+          1000+
+        </span>
+        partner currently have us.
+      </h5>
+      <div class="flex flex-col">
+        <div class="mt-10">
+          <ul class="flex align-middle justify-center gap-10 pt-1">
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-xl">
+              <a href="">
+                <img src="./assets/Images/Brand_01.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_02.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_03.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_04.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_05.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative   text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_06.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-10">
+          <ul class="flex align-middle justify-center gap-10 pt-1">
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-xl">
+              <a href="">
+                <img src="./assets/Images/Brand_01.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_02.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_03.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_04.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_05.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative   text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_06.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-10">
+          <ul class="flex align-middle justify-center gap-10 pt-1">
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-xl">
+              <a href="">
+                <img src="./assets/Images/Brand_01.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_02.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_03.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_04.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative  text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_05.svg" alt="">
+              </a>
+            </li>
+            <li class="flex relative   text-center mx-1	 bg-white p-4 pl-10 pr-10 rounded-3xl shadow-lg">
+              <a href="">
+                <img src="./assets/Images/Brand_06.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- case Study -->
+  <section class="mt-24 px-36 container ">
+    <div class="flex justify-between ">
+      <img src="./assets/Images/caseStudy.svg" alt="">
+      <div class="flex flex-col mt-14  ">
+        <p class="text-gradient1 ">Digital Analytics & Strategy Consulting Agency</p>
+        <h2 class="text-7xl text-color font-bold mt-5  ">
+          We Provided <br>
+          Case study
+        </h2>
+      </div>
+      <div class="flex gap-5 mt-48">
+        <div
+          class="shadow-xl rounded-full  text-center flex align-middle justify-center w-[60px] h-[60px] bg-gradient1">
+          <span class="my-auto text-white "> <img src="./assets/Images/CaseStudySvg1.svg" alt=""> </span>
+        </div>
+        <div
+          class="shadow-xl bg-gradient1 flex align-middle justify-center a rounded-3xl w-[125px]  h-[60px] text-center ">
+          <span class="my-auto text-white">View All</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-rows-2 grid-flow-col gap-20 justify-center mt-10">
+      <div class="h-[500px] w-[650px]  rounded-3xl shadow-md">
+        <div class="flex flex-col relative">
+          <img src="./assets/Images/CaseStudyCard1.png" alt="">
+          <div class="bg-gray-100 rounded-3xl p-4 h-[150px] absolute top-[75%] left-0 right-0">
+            <h2 class="text-start px-4 font-bold text-4xl flex align-middle ">backlinks high authority link <br>
+              service for google ranking</h2>
+            <div class="flex items-baseline">
+              <h2 class="font-bold text-2xl flex pl-4 pt-2 text-gradient1 ">$59.99/ </h2>
+              <span class="font-semibold text-lg  text-slate-400">month</span>
+              <div
+              class="shadow-xl rounded-full  text-center flex align-middle justify-center w-[60px] h-[60px] bg-gradient1 absolute right-0 ">
+              <span class="my-auto text-white "> <img src="./assets/Images/CaseStudySvg1.svg" alt=""> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[500px] w-[650px]  rounded-3xl shadow-md">
+        <div class="flex flex-col relative">
+          <img src="./assets/Images/CaseStudyCard2.png" alt="">
+          <div class="bg-gray-100 rounded-3xl p-4 h-[150px] absolute top-[75%] left-0 right-0">
+            <h2 class="text-start px-4 font-bold text-4xl flex align-middle ">One Page Off Page SEO With High <br>
+              Quality Dofollow </h2>
+            <div class="flex items-baseline">
+              <h2 class="font-bold text-2xl flex pl-4 pt-2 text-gradient2">$59.99/ </h2>
+              <span class="font-semibold text-lg  text-slate-400">month</span>
+              <div
+              class="shadow-xl rounded-full  text-center flex align-middle justify-center w-[60px] h-[60px] bg-gradient2 absolute right-0 ">
+              <span class="my-auto text-white "> <img src="./assets/Images/CaseStudySvg1.svg" alt=""> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[500px] w-[650px]  rounded-3xl shadow-md">
+        <div class="flex flex-col relative">
+          <img src="./assets/Images/CaseStudyCard3.png" alt="">
+          <div class="bg-gray-100 rounded-3xl p-4 h-[150px] absolute top-[75%] left-0 right-0">
+            <h2 class="text-start px-4 font-bold text-4xl flex align-middle ">One Page Off Page SEO With High <br>
+              Quality Dofollow </h2>
+            <div class="flex items-baseline">
+              <h2 class="font-bold text-2xl flex pl-4 pt-2 text-gradient3">$59.99/ </h2>
+              <span class="font-semibold text-lg  text-slate-400 ">month</span>
+              <div
+              class="shadow-xl rounded-full  text-center flex align-middle justify-center w-[60px] h-[60px] bg-gradient3 absolute right-0 ">
+              <span class="my-auto text-white "> <img src="./assets/Images/CaseStudySvg1.svg" alt=""> </span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[500px] w-[650px]  rounded-3xl shadow-md">
+        <div class="flex flex-col relative">
+          <img src="./assets/Images/CaseStudyCard4.png" alt="">
+          <div class="bg-gray-100 rounded-3xl p-4 h-[150px] absolute top-[75%] left-0 right-0">
+            <h2 class="text-start px-4 font-bold text-4xl flex align-middle ">backlinks high authority link <br>
+              service for google ranking</h2>
+            <div class="flex items-baseline   ">
+              <h2 class="font-bold text-2xl flex pl-4 pt-2 text-gradient4">$59.99/</h2> <span
+                class="font-semibold text-md  text-slate-400 ">month</span>
+                <div
+                class="shadow-xl rounded-full  text-center flex align-middle justify-center w-[60px] h-[60px] bg-gradient4 absolute right-0 ">
+                <span class="my-auto text-white "> <img src="./assets/Images/CaseStudySvg1.svg" alt=""> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/c2fedc24d5.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
